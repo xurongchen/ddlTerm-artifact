@@ -44,7 +44,7 @@ ARG Z3_Download_Name=z3-4.8.9-x64-ubuntu-16.04
 
 # RUN wget -O z3.zip ${Z3_Link} && unzip z3.zip
 # PROXY for github
-RUN wget -e "http_proxy=socks5h://166.111.82.55:1081" -O z3.zip ${Z3_Link} && unzip z3.zip
+RUN ALL_PROXY=socks5h://166.111.82.55:1081 wget -O z3.zip ${Z3_Link} && unzip z3.zip
 
 RUN cp /root/${Z3_Download_Name}/bin/z3 /root/ddlTerm/ice/popl16_artifact/Boogie/Binaries/z3.exe
 
