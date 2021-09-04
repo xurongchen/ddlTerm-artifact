@@ -19,7 +19,7 @@ WORKDIR /root
 
 RUN pip install pandas scipy sklearn antlr4-python3-runtime xlsxwriter
 
-ADD git@github.com:xurongchen/ddlTerm.git ddlTerm.version
+ADD git@github.com:xurongchen/ddlTerm-artifact.git ddlTerm.version
 
 RUN git clone git@github.com:xurongchen/ddlTerm-artifact.git
 
