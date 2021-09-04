@@ -37,8 +37,6 @@ RUN cp /root/ddlTerm/ice/popl16_artifact/C50/c5.0.* /root/ddlTerm/ice/popl16_art
 WORKDIR /root
 
 ARG Z3_Link=https://github.com/Z3Prover/z3/releases/download/z3-4.8.9/z3-4.8.9-x64-ubuntu-16.04.zip
-# Use mirror link here(Because of the network connection to GitHub)
-# ARG Z3_Link=https://cloud.tsinghua.edu.cn/f/35fb0dada71049f8b0bc/?dl=1
 
 ARG Z3_Download_Name=z3-4.8.9-x64-ubuntu-16.04
 
