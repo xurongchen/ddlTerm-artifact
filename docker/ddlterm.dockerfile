@@ -21,11 +21,9 @@ RUN pip install pandas scipy sklearn antlr4-python3-runtime xlsxwriter
 
 ADD https://github.com/xurongchen/ddlTerm-artifact.git ddlTerm.version
 
-RUN git clone https://github.com/xurongchen/ddlTerm-artifact.git ddlTerm
+RUN git clone https://github.com/xurongchen/ddlTerm-artifact.git ddlTerm && rm -rf ddlTerm/.git && rm -rf ddlTerm/docker
 
 WORKDIR /root/ddlTerm/
-
-RUN rm -rf .git/ && rm -rf docker
 
 # Build the ddlTerm
 WORKDIR /root/ddlTerm/ice/popl16_artifact/Boogie/Source
