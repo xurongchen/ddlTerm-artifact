@@ -1,5 +1,6 @@
 <job>
     <Name>LeNLeMixed_TO60_Standard</Name>
+    <Tmp>/home/ubuntu/Repository/tmpfs</Tmp>
     <Log>0</Log>
     <Log_Lgs>LeNLeMixed_TO60_Standard_TIME_</Log_Lgs>
     <Log_Excel>LeNLeMixed_TO60_Standard_TIME_</Log_Excel>
@@ -12,7 +13,7 @@
         <MLearnClusterNum>10</MLearnClusterNum>
     </NLe>
     <Le>
-        <Timeout>20</Timeout>
+        <Timeout>25</Timeout>
         <TestRound>100</TestRound>
         <UseAdvancedCBC>True</UseAdvancedCBC>
         <LexicalStrategy>TraceBest</LexicalStrategy>
@@ -20,7 +21,7 @@
         <MLearnTarget>LSM_L2</MLearnTarget>
     </Le>
     <Le>
-        <Timeout>30</Timeout>
+        <Timeout>40</Timeout>
         <TestRound>100</TestRound>
         <UseAdvancedCBC>True</UseAdvancedCBC>
         <LexicalStrategy>TraceBest</LexicalStrategy>
