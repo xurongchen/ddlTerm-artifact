@@ -1,8 +1,10 @@
 <job>
-    <Name>NLe_TO60_Standard</Name>
+    <Name>NLe_Standard_MLSingle</Name>
+    <Tmp>/tmpfs</Tmp>
+    <Log_Dir>/log</Log_Dir>
     <Log>0</Log>
-    <Log_Lgs>NLe_TO60_Standard_TIME_</Log_Lgs>
-    <Log_Excel>NLe_TO60_Standard_TIME_</Log_Excel>
+    <Log_Lgs>NLe_Standard_MLSingle_TIME_</Log_Lgs>
+    <Log_Excel>NLe_Standard_MLSingle_TIME_</Log_Excel>
     <NLe>
         <Timeout>60</Timeout>
         <TestRound>100</TestRound>
@@ -10,6 +12,6 @@
         <UseAdvancedCBC>True</UseAdvancedCBC>
         <MLearnTarget>L2</MLearnTarget>
         <MLearnClusterNum>10</MLearnClusterNum>
+        <MLearnStrategy>single-best</MLearnStrategy>
     </NLe>
 </job>
-
