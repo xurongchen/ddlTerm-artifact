@@ -1,0 +1,24 @@
+<job>
+    <Name>LeNLeMixed_TO60_Standard_MLRefined</Name>
+    <Log>0</Log>
+    <Log_Lgs>LeNLeMixed_TO60_Standard_MLRefined_TIME_</Log_Lgs>
+    <Log_Excel>LeNLeMixed_TO60_Standard_MLRefined_TIME_</Log_Excel>
+    <NLe>
+        <Timeout>30</Timeout>
+        <TestRound>100</TestRound>
+        <CBC_Limit>1000</CBC_Limit>
+        <UseAdvancedCBC>True</UseAdvancedCBC>
+        <MLearnTarget>L2</MLearnTarget>
+        <MLearnClusterNum>10</MLearnClusterNum>
+        <MLearnStrategy>best</MLearnStrategy>
+    </NLe>
+    <Le>
+        <Timeout>30</Timeout>
+        <TestRound>100</TestRound>
+        <UseAdvancedCBC>True</UseAdvancedCBC>
+        <LexicalStrategy>TraceBest</LexicalStrategy>
+        <LexicalRankMax>2</LexicalRankMax>
+        <MLearnTarget>LSM_L2</MLearnTarget>
+        <MLearnStrategy>best</MLearnStrategy>
+    </Le>
+</job>

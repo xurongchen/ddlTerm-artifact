@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+build/
+binaries/
+bin/
+Build/
+Binaries/
+Bin/
+obj/
+Obj/
+*.o
+*.a
+*.so
+c5.0.dt_entropy
+c5.0.dt_penalty
+c5.0dbg
+

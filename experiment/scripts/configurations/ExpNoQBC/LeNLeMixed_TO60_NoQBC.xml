@@ -1,0 +1,35 @@
+<job>
+    <Name>LeNLeMixed_TO60_NoQBC</Name>
+    <Log>0</Log>
+    <Log_Lgs>LeNLeMixed_TO60_NoQBC_TIME_</Log_Lgs>
+    <Log_Excel>LeNLeMixed_TO60_NoQBC_TIME_</Log_Excel>
+    <NLe>
+        <Timeout>30</Timeout>
+        <TestRound>100</TestRound>
+        <CBC_Limit>0</CBC_Limit>
+        <BMC_Limit>-1</BMC_Limit>
+        <UseAdvancedCBC>False</UseAdvancedCBC>
+        <MLearnTarget>L2</MLearnTarget>
+        <MLearnClusterNum>10</MLearnClusterNum>
+    </NLe>
+    <Le>
+        <Timeout>30</Timeout>
+        <TestRound>100</TestRound>
+        <UseAdvancedCBC>False</UseAdvancedCBC>
+        <CBC_Limit>0</CBC_Limit>
+        <BMC_Limit>-1</BMC_Limit>
+        <LexicalStrategy>TraceBest</LexicalStrategy>
+        <LexicalRankMax>2</LexicalRankMax>
+        <MLearnTarget>LSM_L2</MLearnTarget>
+    </Le>
+    <Le>
+        <Timeout>30</Timeout>
+        <TestRound>100</TestRound>
+        <UseAdvancedCBC>False</UseAdvancedCBC>
+        <CBC_Limit>0</CBC_Limit>
+        <BMC_Limit>-1</BMC_Limit>
+        <LexicalStrategy>TraceBest</LexicalStrategy>
+        <LexicalRankMax>3</LexicalRankMax>
+        <MLearnTarget>LSM_L2</MLearnTarget>
+    </Le>
+</job>
