@@ -89,3 +89,8 @@ If you want to make a comparative experiment, please follow the install instrume
 * We provide some useful scripts in `experiment/baseline.scripts` to run the experiments for `AProVE`, `Ultimate Automizer` and `FreqTerm`. 
   You can modify the path in the scripts to run these tools. We hope these scripts are useful for you.
 
+## File Structure
+* `code/` contains all source codes of loop bound generation
+* `docker/` includes a docker file to build the docker image
+* `experiments/` includes benchmarks and necessary scripts for running experiments
+* `ice/` includes an open source safety validator `ICE-DT` (we made some modification)
