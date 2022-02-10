@@ -123,7 +123,8 @@ The directory `/path/to/a/directory/to/save/the/result` will include a Excel fil
 
 ### Result Example
 `LeNLeMixed_TO60_Standard202108251055_MAIN.xlsx` is an example.
-* Column `Task` is the task name; column `Result` reports the result; 
+* Column `Task` is the task name; 
+* Column `Result` reports the result; 
 * Column `RoB` reports the bound learning rounds; 
 * Column `RoI_Total` reports the invariant learning rounds in total; 
 * Column `RoI_Max` reports maximum value of the invariant learning rounds during the bound learning; 
