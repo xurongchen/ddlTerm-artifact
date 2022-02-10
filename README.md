@@ -123,4 +123,16 @@ The directory `/path/to/a/directory/to/save/the/result` will include a Excel fil
 
 ### Result Example
 `LeNLeMixed_TO60_Standard202108251055_MAIN.xlsx` is an example.
-Column `Task` is the task name; column `Result` reports the result; column `RoB` reports the bound learning rounds; column `RoI_Total` reports the invariant learning rounds in total; column `RoI_Max` reports maximum value of the invariant learning rounds during the bound learning; `T_Total` reports the total time; `ToT_Total` and `ToT_Max` report the total and maximum time on testing, respectively; `ToB_Total` and `ToB_Max` report the total and maximum time on bound learning, respectively; `ToI_Total` and `ToI_Max` report the total and maximum time on invariant learning, respectively; `ToC_Total` and `ToC_Max` report the total and maximum time on constant loop bound checking, respectively; `ToM_Total` and `ToM_Max` report the total and maximum time on the quick bound checking (based on BMC), respectively; `FinalInv` and `FindBound` report the final loop invariant and loop bounds. `SizeC` and `SizeBpl` report the C and Boogie file size. `RoB:ICE`, `RoB:BMC`, and `RoB:CBC` report the total call times of ICE loop invariant learner, the quick bound checking (based on BMC) and the constant bound checker, respectively.
+* Column `Task` is the task name; column `Result` reports the result; 
+* Column `RoB` reports the bound learning rounds; 
+* Column `RoI_Total` reports the invariant learning rounds in total; 
+* Column `RoI_Max` reports maximum value of the invariant learning rounds during the bound learning; 
+* Column `T_Total` reports the total time; 
+* Columns `ToT_Total` and `ToT_Max` report the total and maximum time on testing, respectively; 
+* Columns `ToB_Total` and `ToB_Max` report the total and maximum time on bound learning, respectively; 
+* Columns `ToI_Total` and `ToI_Max` report the total and maximum time on invariant learning, respectively; 
+* Columns `ToC_Total` and `ToC_Max` report the total and maximum time on constant loop bound checking, respectively; 
+* Columns `ToM_Total` and `ToM_Max` report the total and maximum time on the quick bound checking (based on BMC), respectively;
+* Columns `FinalInv` and `FindBound` report the final loop invariant and loop bounds. 
+* Columns `SizeC` and `SizeBpl` report the C and Boogie file size. 
+* Columns `RoB:ICE`, `RoB:BMC`, and `RoB:CBC` report the total call times of ICE loop invariant learner, the quick bound checking (based on BMC) and the constant bound checker, respectively.
