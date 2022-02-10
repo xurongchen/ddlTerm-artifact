@@ -91,6 +91,36 @@ If you want to make a comparative experiment, please follow the install instrume
 
 ## File Structure
 * `code/` contains all source codes of loop bound generation
+  * `IceTerm.py`: The main entrance
+  * `Logger.py`: A simple logger
+  * `BG0Checker/`: A simple checker to check whether the learned bound is always greater than or equals to 0.
+  * `BMCFinder/`: A bounded-model-checking based error finder
+  * `BoogieAST/`: An AST parser for boogie language, which is based on Antlr4.
+  * `CBChecker/`: A simple checker to check the loop bound when it is a constant value.
+  * `ErrorFinder/`: An analyzer to transform ICE dataset to an error trace for invalid loop bounds. 
+  * `IceCaller/`: A safety checker caller for ICE.
+  * `MLearner/`: A loop bound learner, including simple, conjunctive, and lexicographic loop bound.
+  * `RandTester/`: A component for rand or mutation tests.
+  * `StateTrans/`: A data structure to record the program states transitions during the loop iteration.
 * `docker/` includes a docker file to build the docker image
 * `experiments/` includes benchmarks and necessary scripts for running experiments
 * `ice/` includes an open source safety validator `ICE-DT` (we made some modification)
+
+## Where is the result
+### Run with Linux
+Please update the configuration XML file in `experiment/scripts/configurations` before the experiments.
+```xml
+<!-- A path to output result directory -->
+<Log_Dir>/my/path/to/log</Log_Dir>
+```
+The directory `/my/path/to/log` will include a Excel file with all the results inside.
+### Run with Docker
+Start the docker image with the path of log directory on your **host machine**. (replace `/path/to/a/directory/to/save/the/result`)
+```sh
+docker run -it -v /path/to/a/directory/to/save/the/result:/log --tmpfs /tmpfs --cpus=1 ddltermartifact:latest
+```
+The directory `/path/to/a/directory/to/save/the/result` will include a Excel file with all the results inside.
+
+### Result Example
+`LeNLeMixed_TO60_Standard202108251055_MAIN.xlsx` is an example.
+Column `Task` is the task name; column `Result` reports the result; column `RoB` reports the bound learning rounds; column `RoI_Total` reports the invariant learning rounds in total; column `RoI_Max` reports maximum value of the invariant learning rounds during the bound learning; `T_Total` reports the total time; `ToT_Total` and `ToT_Max` report the total and maximum time on testing, respectively; `ToB_Total` and `ToB_Max` report the total and maximum time on bound learning, respectively; `ToI_Total` and `ToI_Max` report the total and maximum time on invariant learning, respectively; `ToC_Total` and `ToC_Max` report the total and maximum time on constant loop bound checking, respectively; `ToM_Total` and `ToM_Max` report the total and maximum time on the quick bound checking (based on BMC), respectively; `FinalInv` and `FindBound` report the final loop invariant and loop bounds. `SizeC` and `SizeBpl` report the C and Boogie file size. `RoB:ICE`, `RoB:BMC`, and `RoB:CBC` report the total call times of ICE loop invariant learner, the quick bound checking (based on BMC) and the constant bound checker, respectively.

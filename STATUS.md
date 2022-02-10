@@ -1,6 +1,6 @@
 Badges
 ===
-We would like to apply for the badges Functional and Available.
+We would like to apply for the badges Reusable and Available.
 
 Available
 --
