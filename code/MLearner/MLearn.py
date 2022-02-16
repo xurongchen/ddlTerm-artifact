@@ -360,7 +360,8 @@ class MLearn:
         if defaultClusterNum == 0:
             defaultClusterNum = 1
         self.Logger.Log('[Info] Cluster to {} groups.'.format(defaultClusterNum))
-        kmeans = KMeans(n_clusters=defaultClusterNum, random_state=0, n_jobs=1).fit(VARS[:caseNum])
+        # kmeans = KMeans(n_clusters=defaultClusterNum, random_state=0, n_jobs=1).fit(VARS[:caseNum])
+        kmeans = KMeans(n_clusters=defaultClusterNum, random_state=0).fit(VARS[:caseNum])
         # print(kmeans.labels_)
         # TODO: SHOW THE PIC RESULT OF KMEANS HERE！！！
         # caseNum = len(ROUNDS)
